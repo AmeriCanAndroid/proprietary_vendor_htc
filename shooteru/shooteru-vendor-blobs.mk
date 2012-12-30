@@ -24,6 +24,8 @@ PRODUCT_COPY_FILES += \
 
 # All the blobs necessary for shooteru
 PRODUCT_COPY_FILES += \
+    vendor/htc/shooteru/proprietary/ipd:system/bin/ipd \
+    vendor/htc/shooteru/proprietary/ip:system/bin/ip \
     vendor/htc/shooteru/proprietary/3D_calibration:system/bin/3D_calibration \
     vendor/htc/shooteru/proprietary/3D_calibration_main:system/bin/3D_calibration_main \
     vendor/htc/shooteru/proprietary/charging:system/bin/charging \
@@ -42,10 +44,12 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/htc/shooteru/proprietary/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     vendor/htc/shooteru/proprietary/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
+    vendor/htc/shooteru/proprietary/libGLESv2S3D_adreno200.so:/system/lib/egl/libGLESv2S3D_adreno200.so \
     vendor/htc/shooteru/proprietary/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
     vendor/htc/shooteru/proprietary/libgsl.so:system/lib/libgsl.so \
     vendor/htc/shooteru/proprietary/libOpenVG.so:system/lib/libOpenVG.so \
     vendor/htc/shooteru/proprietary/libC2D2.so:system/lib/libC2D2.so \
+    vendor/htc/shooteru/proprietary/libc2d2_z180.so:/system/lib/libc2d2_z180.so \
     vendor/htc/shooteru/proprietary/libsc-a2xx.so:system/lib/libsc-a2xx.so \
     vendor/htc/shooteru/proprietary/libhtc_acoustic.so:system/lib/libhtc_acoustic.so \
     vendor/htc/shooteru/proprietary/libaudioalsa.so:system/lib/libaudioalsa.so \
@@ -65,7 +69,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/libhtc_ril.so:system/lib/libhtc_ril.so \
     vendor/htc/shooteru/proprietary/camera.default.so:system/lib/hw/camera.default.so \
     vendor/htc/shooteru/proprietary/libcamerapp.so:system/lib/libcamerapp.so \
-    vendor/htc/shooteru/proprietary/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/htc/shooteru/proprietary/libcameraLN.so:system/lib/libcameraLN.so \
     vendor/htc/shooteru/proprietary/libcameraSP.so:system/lib/libcameraSP.so \
     vendor/htc/shooteru/proprietary/libcameraface.so:system/lib/libcameraface.so \
@@ -85,8 +88,22 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/libmmstereo.so:system/lib/libmmstereo.so \
     vendor/htc/shooteru/proprietary/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/htc/shooteru/proprietary/libv8.so:system/lib/libv8.so \
-    vendor/htc/shooteru/proprietary/lights.msm8660.so:system/lib/hw/lights.msm8660.so \
     vendor/htc/shooteru/proprietary/libmpl.so:system/lib/libmpl.so \
     vendor/htc/shooteru/proprietary/libmllite.so:system/lib/libmllite.so \
     vendor/htc/shooteru/proprietary/libmlplatform.so:system/lib/libmlplatform.so \
     vendor/htc/shooteru/proprietary/sensors.shooteru.so:system/lib/hw/sensors.shooteru.so
+
+# All the blobs necessary for DRM
+PRODUCT_COPY_FILES +=  \
+    vendor/htc/shooteru/proprietary/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
+    vendor/htc/shooteru/proprietary/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
+    vendor/htc/shooteru/proprietary/libfrsdk.so:system/lib/libfrsdk.so \
+    vendor/htc/shooteru/proprietary/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+    vendor/htc/shooteru/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/htc/shooteru/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/htc/shooteru/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/htc/shooteru/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
+
