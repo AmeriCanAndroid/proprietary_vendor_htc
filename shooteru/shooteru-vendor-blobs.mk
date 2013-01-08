@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \
   vendor/htc/shooteru/proprietary/system/lib/libcameraLN.so:system/lib/libcameraLN.so \
   vendor/htc/shooteru/proprietary/system/lib/libcamerapp.so:system/lib/libcamerapp.so \
   vendor/htc/shooteru/proprietary/system/lib/libcameraSP.so:system/lib/libcameraSP.so \
-  vendor/htc/shooteru/proprietary/system/lib/libcameraservice.so:system/lib/libcameraservice.so \
   vendor/htc/shooteru/proprietary/system/lib/libchromatix_qs_s5k4e1_video.so:system/lib/libchromatix_qs_s5k4e1_video.so \
   vendor/htc/shooteru/proprietary/system/lib/libchromatix_qs_s5k4e1_preview.so:system/lib/libchromatix_qs_s5k4e1_preview.so \
   vendor/htc/shooteru/proprietary/system/lib/libdll.so:system/lib/libdll.so \
