@@ -19,7 +19,8 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/camera.default.so:obj/lib/hw/camera.default.so \
     vendor/htc/shooteru/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
     vendor/htc/shooteru/proprietary/libacdbloader.so:obj/lib/libacdbloader.so \
-    vendor/htc/shooteru/proprietary/libacdbmapper.so:obj/lib/libacdbmapper.so
+    vendor/htc/shooteru/proprietary/libacdbmapper.so:obj/lib/libacdbmapper.so \
+    vendor/htc/shooteru/proprietary/libv8.so:obj/lib/libv8.so
 
 # All the blobs necessary for shooteru
 PRODUCT_COPY_FILES += \
