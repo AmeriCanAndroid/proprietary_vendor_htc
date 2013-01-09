@@ -19,8 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/camera.default.so:obj/lib/hw/camera.default.so \
     vendor/htc/shooteru/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
     vendor/htc/shooteru/proprietary/libacdbloader.so:obj/lib/libacdbloader.so \
-    vendor/htc/shooteru/proprietary/libacdbmapper.so:obj/lib/libacdbmapper.so \
-    vendor/htc/shooteru/proprietary/libv8.so:obj/lib/libv8.so
+    vendor/htc/shooteru/proprietary/libacdbmapper.so:obj/lib/libacdbmapper.so
 
 # All the blobs necessary for shooteru
 PRODUCT_COPY_FILES += \
@@ -87,17 +86,10 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/libmmjps.so:system/lib/libmmjps.so \
     vendor/htc/shooteru/proprietary/libmmstereo.so:system/lib/libmmstereo.so \
     vendor/htc/shooteru/proprietary/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-    vendor/htc/shooteru/proprietary/libv8.so:system/lib/libv8.so \
     vendor/htc/shooteru/proprietary/libmpl.so:system/lib/libmpl.so \
     vendor/htc/shooteru/proprietary/libmllite.so:system/lib/libmllite.so \
     vendor/htc/shooteru/proprietary/libmlplatform.so:system/lib/libmlplatform.so \
     vendor/htc/shooteru/proprietary/sensors.shooteru.so:system/lib/hw/sensors.shooteru.so
-
-# Extra things we need to take care of
-PRODUCT_COPY_FILES +=  \
-    vendor/htc/shooteru/proprietary/brcm_patchram_plus:system/bin/brcm_patchram_plus \
-    vendor/htc/shooteru/proprietary/main.conf:system/etc/bluetooth/main.conf \
-    vendor/htc/shooteru/proprietary/apns-conf.xml:system/etc/apns-conf.xml
 
 # All the blobs necessary for DRM
 PRODUCT_COPY_FILES +=  \
@@ -112,3 +104,4 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
+
