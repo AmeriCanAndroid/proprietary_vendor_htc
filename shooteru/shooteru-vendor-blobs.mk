@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
 # Extra things we need to take care of
 PRODUCT_COPY_FILES +=  \
     vendor/htc/shooteru/proprietary/brcm_patchram_plus:system/bin/brcm_patchram_plus \
-    vendor/htc/shooteru/proprietary/main.conf:system/etc/bluetooth/main.conf \
+    vendor/htc/shooteru/proprietary/main.conf:system/etc/bluetooth/main.conf
 
 # All the blobs necessary for DRM
 PRODUCT_COPY_FILES +=  \
