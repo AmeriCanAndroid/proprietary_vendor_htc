@@ -103,10 +103,10 @@ PRODUCT_COPY_FILES +=  \
     vendor/htc/shooteru/proprietary/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
     vendor/htc/shooteru/proprietary/libfrsdk.so:system/lib/libfrsdk.so \
     vendor/htc/shooteru/proprietary/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/htc/shooteru/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/htc/shooteru/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/htc/shooteru/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/htc/shooteru/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+    vendor/htc/shooteru/proprietary/libwvdrm_L1.so:/vendor/lib/libwvdrm_L1.so \
+    vendor/htc/shooteru/proprietary/libwvm.so:/vendor/lib/libwvm.so \
+    vendor/htc/shooteru/proprietary/libWVStreamControlAPI_L1.so:/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/htc/shooteru/proprietary/libdrmwvmplugin.so:/vendor/lib/drm/libdrmwvmplugin.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
