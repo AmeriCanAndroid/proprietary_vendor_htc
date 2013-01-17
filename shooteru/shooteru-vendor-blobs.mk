@@ -71,8 +71,8 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/libcamerapp.so:system/lib/libcamerapp.so \
     vendor/htc/shooteru/proprietary/libcameraLN.so:system/lib/libcameraLN.so \
     vendor/htc/shooteru/proprietary/libcameraSP.so:system/lib/libcameraSP.so \
-    vendor/htc/shooteru/proprietary/libcameraface.so:system/lib/libcameraface.so \
     vendor/htc/shooteru/proprietary/libcameraservice.so:system/lib/libcameraservice.so \
+    vendor/htc/shooteru/proprietary/libcameraface.so:system/lib/libcameraface.so \
     vendor/htc/shooteru/proprietary/libchromatix_qs_s5k4e1_preview.so:system/lib/libchromatix_qs_s5k4e1_preview.so \
     vendor/htc/shooteru/proprietary/libchromatix_qs_s5k4e1_video.so:system/lib/libchromatix_qs_s5k4e1_video.so \
     vendor/htc/shooteru/proprietary/libmmmpo.so:system/lib/libmmmpo.so \
@@ -94,21 +94,16 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/libmlplatform.so:system/lib/libmlplatform.so \
     vendor/htc/shooteru/proprietary/sensors.shooteru.so:system/lib/hw/sensors.shooteru.so
 
-# Extra things we need to take care of
-PRODUCT_COPY_FILES +=  \
-    vendor/htc/shooteru/proprietary/brcm_patchram_plus:system/bin/brcm_patchram_plus \
-    vendor/htc/shooteru/proprietary/main.conf:system/etc/bluetooth/main.conf
-
 # All the blobs necessary for DRM
 PRODUCT_COPY_FILES +=  \
     vendor/htc/shooteru/proprietary/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/htc/shooteru/proprietary/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
     vendor/htc/shooteru/proprietary/libfrsdk.so:system/lib/libfrsdk.so \
     vendor/htc/shooteru/proprietary/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/htc/shooteru/proprietary/libwvdrm_L1.so:vendor/lib/libwvdrm_L1.so \
-    vendor/htc/shooteru/proprietary/libwvm.so:vendor/lib/libwvm.so \
-    vendor/htc/shooteru/proprietary/libWVStreamControlAPI_L1.so:vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/htc/shooteru/proprietary/libdrmwvmplugin.so:vendor/lib/drm/libdrmwvmplugin.so
+    vendor/htc/shooteru/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/htc/shooteru/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/htc/shooteru/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/htc/shooteru/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
 
 # Firmwares
 PRODUCT_COPY_FILES += \
