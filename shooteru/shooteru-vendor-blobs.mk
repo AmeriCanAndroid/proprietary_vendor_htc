@@ -19,8 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/camera.default.so:obj/lib/hw/camera.default.so \
     vendor/htc/shooteru/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
     vendor/htc/shooteru/proprietary/libacdbloader.so:obj/lib/libacdbloader.so \
-    vendor/htc/shooteru/proprietary/libacdbmapper.so:obj/lib/libacdbmapper.so \
-    vendor/htc/shooteru/proprietary/libv8.so:obj/lib/libv8.so
+    vendor/htc/shooteru/proprietary/libacdbmapper.so:obj/lib/libacdbmapper.so
 
 # All the blobs necessary for shooteru
 PRODUCT_COPY_FILES += \
@@ -52,6 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/libcameraface.so:system/lib/libcameraface.so \
     vendor/htc/shooteru/proprietary/libcameraLN.so:system/lib/libcameraLN.so \
     vendor/htc/shooteru/proprietary/libcamerapp.so:system/lib/libcamerapp.so \
+    vendor/htc/shooteru/proprietary/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/htc/shooteru/proprietary/libcameraSP.so:system/lib/libcameraSP.so \
     vendor/htc/shooteru/proprietary/libchromatix_qs_s5k4e1_preview.so:system/lib/libchromatix_qs_s5k4e1_preview.so \
     vendor/htc/shooteru/proprietary/libchromatix_qs_s5k4e1_video.so:system/lib/libchromatix_qs_s5k4e1_video.so \
@@ -78,7 +78,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/libmmjps.so:system/lib/libmmjps.so \
     vendor/htc/shooteru/proprietary/libmmmpo.so:system/lib/libmmmpo.so \
     vendor/htc/shooteru/proprietary/libmmstereo.so:system/lib/libmmstereo.so \
-    vendor/htc/shooteru/proprietary/libv8.so:system/lib/libv8.so \
     vendor/htc/shooteru/proprietary/libmpl.so:system/lib/libmpl.so \
     vendor/htc/shooteru/proprietary/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/htc/shooteru/proprietary/liboemcamera.so:system/lib/liboemcamera.so \
@@ -105,4 +104,4 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
-    
+
