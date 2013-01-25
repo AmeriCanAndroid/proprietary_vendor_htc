@@ -19,7 +19,8 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/camera.default.so:obj/lib/hw/camera.default.so \
     vendor/htc/shooteru/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
     vendor/htc/shooteru/proprietary/libacdbloader.so:obj/lib/libacdbloader.so \
-    vendor/htc/shooteru/proprietary/libacdbmapper.so:obj/lib/libacdbmapper.so
+    vendor/htc/shooteru/proprietary/libacdbmapper.so:obj/lib/libacdbmapper.so \
+    vendor/htc/shooteru/proprietary/libv8.so:obj/lib/libv8.so
 
 # All the blobs necessary for shooteru
 PRODUCT_COPY_FILES += \
@@ -89,6 +90,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooteru/proprietary/libqdp.so:system/lib/libqdp.so \
     vendor/htc/shooteru/proprietary/libqmi.so:system/lib/libqmi.so \
     vendor/htc/shooteru/proprietary/libsc-a2xx.so:system/lib/libsc-a2xx.so \
+    vendor/htc/shooteru/proprietary/libv8.so:system/lib/libv8.so \
     vendor/htc/shooteru/proprietary/sensors.shooteru.so:system/lib/hw/sensors.shooteru.so
 
 # All the blobs necessary for DRM
@@ -104,4 +106,3 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
-
